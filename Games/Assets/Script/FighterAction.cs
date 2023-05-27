@@ -58,7 +58,7 @@ public class FighterAction : MonoBehaviour
 
     public void SelectAttack(string btn)
     {
-        GameObject victim = tag == "Hero" ? enemy : hero;
+        GameObject victim = hero;
         if (tag == "Hero")
         {
             victim = enemy;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Transactions;
 using UnityEngine.SocialPlatforms;
 
@@ -8,9 +9,14 @@ public class GameController : MonoBehaviour
 {
     private List<FighterStats> fighterStats;
 
-    [SerializeField]
     private GameObject battleMenu;
 
+    public Text battleText;
+
+    private void Awake()
+    {
+        battleMenu = GameObject.Find("ActionMenu");
+    }
     void Start()
     {
         fighterStats = new List<FighterStats>();
@@ -25,17 +31,17 @@ public class GameController : MonoBehaviour
         fighterStats.Add(currentEnemyStats);
 
         fighterStats.Sort();
-        this.battleMenu.SetActive(false);
+
 
         NextTurn();
-
     }
 
     public void NextTurn()
     {
+        battleText.gameObject.SetActive(false);
         FighterStats currentFighterStats = fighterStats[0];
         fighterStats.Remove(currentFighterStats);
-        if (currentFighterStats.GetDead())
+        if (!currentFighterStats.GetDead())
         {
             GameObject currentUnit = currentFighterStats.gameObject;
             currentFighterStats.CalculateNextTurn(currentFighterStats.nextActTurn);
@@ -44,12 +50,15 @@ public class GameController : MonoBehaviour
             if (currentUnit.tag == "Hero")
             {
                 this.battleMenu.SetActive(true);
-            }else
+            }
+            else
             {
+                this.battleMenu.SetActive(false);
                 string attackType = Random.Range(0, 2) == 1 ? "CounterPunch" : "Block";
                 currentUnit.GetComponent<FighterAction>().SelectAttack(attackType);
             }
-        } else
+        }
+        else
         {
             NextTurn();
         }

@@ -49,6 +49,8 @@ public class FighterStats : MonoBehaviour, IComparable
     private float xNewHealthScale;
     private float xNewMagicScale;
 
+    private GameObject GameControllerObj;
+
     void Awake()
     {
         healthTransform = healthFill.GetComponent<RectTransform>();
@@ -59,15 +61,16 @@ public class FighterStats : MonoBehaviour, IComparable
 
         startHealth = health;
         startMagic = magic;
+
+        GameControllerObj = GameObject.Find("GameControllerObject");
     }
 
     public void ReceiveDamage(float damage)
     {
-        Debug.Log("Received Damage!!!");
         health = health - damage;
-        animator.Play("damage");
+        animator.Play("Damage");
 
-        //set damage text
+        // Set damage text
 
         if (health <= 0)
         {
@@ -75,17 +78,23 @@ public class FighterStats : MonoBehaviour, IComparable
             gameObject.tag = "Dead";
             Destroy(healthFill);
             Destroy(gameObject);
-        } else if (damage > 0) 
+        }
+        else if (damage > 0)
         {
             xNewHealthScale = healthScale.x * (health / startHealth);
             healthFill.transform.localScale = new Vector2(xNewHealthScale, healthScale.y);
+        }
+        if (damage > 0)
+        {
+            GameControllerObj.GetComponent<GameController>().battleText.gameObject.SetActive(true);
+            GameControllerObj.GetComponent<GameController>().battleText.text = damage.ToString();
         }
         Invoke("ContinueGame", 2);
     }
 
     public void updateMagicFill(float cost)
     {
-        if (cost < 1)
+        if (cost > 0)
         {
             magic = magic - cost;
             xNewMagicScale = magicScale.x * (magic / startMagic);
@@ -93,9 +102,18 @@ public class FighterStats : MonoBehaviour, IComparable
         }
     }
 
+    public bool GetDead()
+    {
+        return dead;
+    }
+
     void ContinueGame()
     {
         GameObject.Find("GameControllerObject").GetComponent<GameController>().NextTurn();
+    }
+    public void CalculateNextTurn(int currentTurn)
+    {
+        nextActTurn = currentTurn + Mathf.CeilToInt(100f / speed);
     }
 
     public int CompareTo(object otherStats)
@@ -104,13 +122,4 @@ public class FighterStats : MonoBehaviour, IComparable
         return nex;
     }
 
-    public bool GetDead()
-    {
-        return dead;
-    }
-
-    public void CalculateNextTurn(int currentTurn)
-    {
-        nextActTurn = currentTurn + Mathf.CeilToInt(100f / speed);
-    }
 }
