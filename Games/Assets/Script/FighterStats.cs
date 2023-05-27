@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
-public class FighterStats : MonoBehaviour
+public class FighterStats : MonoBehaviour, IComparable
 {
     [SerializeField]
     private Animator animator;
@@ -16,12 +18,21 @@ public class FighterStats : MonoBehaviour
     [Header("Stats")]
     public float health;
     public float magic;
-    public float attack;
+    public float CounterPunch;
+    public float Block;
+    public float Bodyshot;
+    public float Clinch;
+    public float Cross;
+    public float Footwork;
+    public float Hook;
+    public float Jab;
+    public float Slip;
+    public float Uppercut;
+    /*
     public float defense;
-    public float range;
     public float speed;
     public float experience;
-
+    */
     public float startHealth;
     public float startMagic;
 
@@ -37,7 +48,7 @@ public class FighterStats : MonoBehaviour
     private Vector2 magicScale;
 
     private float xNewHealthScale;
-    private float yNewMagicScale;
+    private float xNewMagicScale;
 
     private void Start()
     {
@@ -64,17 +75,24 @@ public class FighterStats : MonoBehaviour
             gameObject.tag = "Dead";
             Destroy(healthFill);
             Destroy(gameObject);
-        } else
+        }
+        else
         {
             xNewHealthScale = healthScale.x * (health / startHealth);
             healthFill.transform.localScale = new Vector2(xNewHealthScale, healthScale.y);
         }
     }
 
-    public void updateMagicFill(float cost);
+    public void updateMagicFill(float cost)
     {
         magic = magic - cost;
-        xNewMagicScale = magicScale.x * (magic/ startMagic);
+        xNewMagicScale = magicScale.x * (magic / startMagic);
         magicFill.transform.localScale = new Vector2(xNewMagicScale, magicScale.y);
-}
+    }
+
+    public int CompareTo(object otherStats)
+    {
+        int nex = nextActTurn.CompareTo(((FighterStats)otherStats).nextActTurn);
+        return nex;
+    }
 }

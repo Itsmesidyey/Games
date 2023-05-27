@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FighterAction : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class FighterAction : MonoBehaviour
     public void SelectAttack(string btn)
     {
         GameObject victim = tag == "Hero" ? enemy : hero;
-        if (tag == "Hero") 
+        if (tag == "Hero")
         {
             victim = enemy;
         }
@@ -93,7 +94,7 @@ public class FighterAction : MonoBehaviour
         }
         else if (btn.CompareTo("Slip") == 0)
         {
-           SlipAttack.GetComponent<AttackScript>().Attack(victim);
+            SlipAttack.GetComponent<AttackScript>().Attack(victim);
         }
         else
         {
