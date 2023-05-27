@@ -38,11 +38,8 @@ public class FighterAction : MonoBehaviour
     [SerializeField]
     private GameObject UppercutPrefab;
 
-    [SerializeField]
-    private GameObject faceIcon;
-
     private GameObject currentAttack;
-    private GameObject CounterPunchAttack;
+    /*private GameObject CounterPunchAttack;
     private GameObject BlockAttack;
     private GameObject BodyshotAttack;
     private GameObject ClinchAttack;
@@ -51,7 +48,13 @@ public class FighterAction : MonoBehaviour
     private GameObject HookAttack;
     private GameObject JabAttack;
     private GameObject SlipAttack;
-    private GameObject UppercutAttack;
+    private GameObject UppercutAttack;*/
+
+    void Awake()
+    {
+        hero = GameObject.FindGameObjectWithTag("Hero");
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
+    }
 
     public void SelectAttack(string btn)
     {
@@ -62,43 +65,43 @@ public class FighterAction : MonoBehaviour
         }
         if (btn.CompareTo("CounterPunch") == 0)
         {
-            CounterPunchAttack.GetComponent<AttackScript>().Attack(victim);
+            CounterPunchPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Block") == 0)
         {
-            BlockAttack.GetComponent<AttackScript>().Attack(victim);
+            BlockPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("BodyShot") == 0)
         {
-            BodyshotAttack.GetComponent<AttackScript>().Attack(victim);
+            BodyshotPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Clinch") == 0)
         {
-            ClinchAttack.GetComponent<AttackScript>().Attack(victim);
+            ClinchPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Cross") == 0)
         {
-            CrossAttack.GetComponent<AttackScript>().Attack(victim);
+            CrossPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("FootWork") == 0)
         {
-            FootworkAttack.GetComponent<AttackScript>().Attack(victim);
+            FootworkPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Hook") == 0)
         {
-            HookAttack.GetComponent<AttackScript>().Attack(victim);
+            HookPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Jab") == 0)
         {
-            JabAttack.GetComponent<AttackScript>().Attack(victim);
+            JabPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("Slip") == 0)
         {
-            SlipAttack.GetComponent<AttackScript>().Attack(victim);
+            SlipPrefab.GetComponent<AttackScript>().Attack(victim);
         }
         else
         {
-            UppercutAttack.GetComponent<AttackScript>().Attack(victim);
+            UppercutPrefab.GetComponent<AttackScript>().Attack(victim);
         }
     }
 }
