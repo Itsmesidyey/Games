@@ -75,10 +75,10 @@ public class FighterStats : MonoBehaviour, IComparable
 
         if (health <= 0)
         {
+            animator.Play("Lose"); 
             dead = true;
             gameObject.tag = "Dead";
             Destroy(healthFill);
-            Destroy(gameObject);
         }
         else if (damage > 0)
         {
