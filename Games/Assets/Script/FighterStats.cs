@@ -6,6 +6,11 @@ using System;
 
 public class FighterStats : MonoBehaviour, IComparable
 {
+    public GameManagerScript gameManager;
+    
+
+    private bool isDead;
+
     [SerializeField]
     private Animator animator;
 
@@ -31,6 +36,7 @@ public class FighterStats : MonoBehaviour, IComparable
     public float magicUppercut;
     public float defense;
     public float speed;
+    
 
     //public float experience;
     public float startHealth;
@@ -73,7 +79,7 @@ public class FighterStats : MonoBehaviour, IComparable
 
         // Set damage text
 
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
             animator.Play("Lose"); 
             dead = true;
