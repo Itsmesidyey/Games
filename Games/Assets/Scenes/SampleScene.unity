@@ -786,7 +786,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: animationName
@@ -794,19 +794,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015445, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: m_RootOrder
@@ -881,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: animationName
@@ -889,19 +889,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
-      propertyPath: minAttackMultiplier
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585813, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: m_RootOrder
@@ -976,7 +976,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: animationName
@@ -984,19 +984,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490349, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: m_RootOrder
@@ -1730,19 +1730,19 @@ MonoBehaviour:
   magicFill: {fileID: 2016533743}
   health: 100
   magic: 100
-  attack: 20
-  CounterPunch: 5
-  magicBlock: 5
-  magicBodyshot: 5
-  magicClinch: 5
-  magicCross: 5
-  magicFootwork: 5
-  magicHook: 5
-  magicJab: 5
-  magicSlip: 5
-  magicUppercut: 5
-  defense: 5
-  speed: 5
+  attack: 0
+  CounterPunch: 15
+  magicBlock: 0
+  magicBodyshot: 10
+  magicClinch: 0
+  magicCross: 10
+  magicFootwork: 0
+  magicHook: 20
+  magicJab: 10
+  magicSlip: 0
+  magicUppercut: 25
+  defense: 0
+  speed: 0
   startHealth: 100
   startMagic: 100
   nextActTurn: 0
@@ -1876,19 +1876,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377947, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: m_RootOrder
@@ -2271,19 +2271,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minAttackMultiplier
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514367, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: m_RootOrder
@@ -2410,7 +2410,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: animationName
@@ -2418,19 +2418,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585813, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: m_RootOrder
@@ -2708,19 +2708,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496819, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: m_RootOrder
@@ -2879,7 +2879,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: animationName
@@ -2887,19 +2887,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075301, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: m_RootOrder
@@ -3303,7 +3303,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: animationName
@@ -3311,19 +3311,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
@@ -3362,19 +3362,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514367, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: m_RootOrder
@@ -4044,7 +4044,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: animationName
@@ -4052,19 +4052,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
@@ -4331,19 +4331,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377947, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: m_RootOrder
@@ -4506,7 +4506,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: magicAttack
@@ -4514,19 +4514,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: minAttackMultiplier
-      value: 10
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 10
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288687, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: m_RootOrder
@@ -5131,7 +5131,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: animationName
@@ -5139,19 +5139,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075301, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: m_RootOrder
@@ -5238,19 +5238,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496819, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: m_RootOrder
@@ -5714,19 +5714,19 @@ MonoBehaviour:
   magicFill: {fileID: 222448186}
   health: 100
   magic: 100
-  attack: 5
-  CounterPunch: 5
-  magicBlock: 5
-  magicBodyshot: 5
-  magicClinch: 5
-  magicCross: 5
-  magicFootwork: 5
-  magicHook: 5
-  magicJab: 5
-  magicSlip: 5
-  magicUppercut: 5
-  defense: 5
-  speed: 5
+  attack: 0
+  CounterPunch: 15
+  magicBlock: 0
+  magicBodyshot: 10
+  magicClinch: 0
+  magicCross: 10
+  magicFootwork: 0
+  magicHook: 20
+  magicJab: 10
+  magicSlip: 0
+  magicUppercut: 25
+  defense: 0
+  speed: 0
   startHealth: 100
   startMagic: 100
   nextActTurn: 0
@@ -6294,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: animationName
@@ -6302,19 +6302,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
@@ -6731,7 +6731,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: animationName
@@ -6739,19 +6739,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015445, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: m_RootOrder
@@ -6838,7 +6838,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: animationName
@@ -6846,19 +6846,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490349, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: m_RootOrder
@@ -6949,7 +6949,7 @@ PrefabInstance:
       objectReference: {fileID: 506531513}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: magicAttack
@@ -6957,19 +6957,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: minAttackMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288687, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: m_RootOrder
@@ -7387,7 +7387,7 @@ PrefabInstance:
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: magicCost
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: animationName
@@ -7395,19 +7395,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: minAttackMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: minDefenseMultiplier
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
