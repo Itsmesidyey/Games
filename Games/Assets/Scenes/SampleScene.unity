@@ -785,8 +785,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: animationName
-      value: Uppercut
+      value: UpperCut
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015445, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: m_RootOrder
@@ -860,8 +880,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: animationName
       value: Slip
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585813, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: m_RootOrder
@@ -935,8 +975,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: animationName
       value: Cross
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490349, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: m_RootOrder
@@ -1297,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d959b5be32caf7543a58701887d4f4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleText: {fileID: 0}
+  battleText: {fileID: 1689914522}
 --- !u!4 &447980000
 Transform:
   m_ObjectHideFlags: 0
@@ -1669,19 +1729,19 @@ MonoBehaviour:
   magicFill: {fileID: 2016533743}
   health: 100
   magic: 100
-  attack: 0
-  CounterPunch: 35
-  magicBlock: 0
-  magicBodyshot: 0
-  magicClinch: 0
-  magicCross: 0
-  magicFootwork: 0
-  magicHook: 0
-  magicJab: 0
-  magicSlip: 0
-  magicUppercut: 0
-  defense: 0
-  speed: 0
+  attack: 20
+  CounterPunch: 5
+  magicBlock: 5
+  magicBodyshot: 5
+  magicClinch: 5
+  magicCross: 5
+  magicFootwork: 5
+  magicHook: 5
+  magicJab: 5
+  magicSlip: 5
+  magicUppercut: 5
+  defense: 5
+  speed: 5
   startHealth: 100
   startMagic: 100
   nextActTurn: 0
@@ -1806,8 +1866,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: animationName
       value: Jab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377947, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: m_RootOrder
@@ -2135,20 +2215,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: animationName
       value: Block
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 1.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minAttackMultiplier
-      value: 0.4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: maxDefenseMultiplier
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: minDefenseMultiplier
@@ -2278,8 +2362,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: animationName
       value: Slip
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197931952306585812, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8197931952306585813, guid: 35c5ca99d4ba45d48b7560a8600e16dd, type: 3}
       propertyPath: m_RootOrder
@@ -2457,8 +2553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Batang Quaipo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2548,8 +2644,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: animationName
       value: Footwork
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496819, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: m_RootOrder
@@ -2707,8 +2815,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: animationName
       value: Bodyshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075301, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: m_RootOrder
@@ -2977,8 +3097,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: animationName
       value: Clinch
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
@@ -3008,8 +3148,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: animationName
       value: Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154715200307514366, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5154715200307514367, guid: 583bc95472cc17f4ca0c0fa1fe0e5bf2, type: 3}
       propertyPath: m_RootOrder
@@ -3274,8 +3434,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
       propertyPath: animationName
       value: Clinch
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154873503438282363, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6fa51c3e0dac04e88b770009f3d0c7, type: 3}
@@ -3533,8 +3705,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: animationName
       value: Jab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743879202506377946, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5743879202506377947, guid: b8d6fb20398f89b4a81631172cd43bec, type: 3}
       propertyPath: m_RootOrder
@@ -3696,8 +3880,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: magicAttack
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288687, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: m_RootOrder
@@ -4078,6 +4274,7 @@ RectTransform:
   - {fileID: 627528968}
   - {fileID: 1812307007}
   - {fileID: 293953161}
+  - {fileID: 1689914521}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4098,8 +4295,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: animationName
       value: Bodyshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267583574096075300, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8267583574096075301, guid: 0e62ee84847624f43918510b734ff0bd, type: 3}
       propertyPath: m_RootOrder
@@ -4177,8 +4394,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: animationName
       value: Footwork
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625828030695496818, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6625828030695496819, guid: b6528b2b0ad981449a5797c3ac059515, type: 3}
       propertyPath: m_RootOrder
@@ -4641,19 +4878,19 @@ MonoBehaviour:
   magicFill: {fileID: 222448186}
   health: 100
   magic: 100
-  attack: 0
-  CounterPunch: 35
-  magicBlock: 0
-  magicBodyshot: 0
-  magicClinch: 0
-  magicCross: 0
-  magicFootwork: 0
-  magicHook: 0
-  magicJab: 0
-  magicSlip: 0
-  magicUppercut: 0
-  defense: 0
-  speed: 0
+  attack: 5
+  CounterPunch: 5
+  magicBlock: 5
+  magicBodyshot: 5
+  magicClinch: 5
+  magicCross: 5
+  magicFootwork: 5
+  magicHook: 5
+  magicJab: 5
+  magicSlip: 5
+  magicUppercut: 5
+  defense: 5
+  speed: 5
   startHealth: 100
   startMagic: 100
   nextActTurn: 0
@@ -4890,6 +5127,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678733114}
   m_CullTransparentMesh: 1
+--- !u!1 &1689914520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689914521}
+  - component: {fileID: 1689914523}
+  - component: {fileID: 1689914522}
+  m_Layer: 5
+  m_Name: BattleMessage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1689914521
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689914520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184904918}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -317, y: 175}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1689914522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689914520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1689914523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689914520}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1711453420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4950,8 +5322,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506531513}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: animationName
       value: Hook
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
@@ -5291,8 +5683,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: animationName
       value: UpperCut
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376069683026015444, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2376069683026015445, guid: 6fc7439bcf99f7644aaabfee9ae3c83d, type: 3}
       propertyPath: m_RootOrder
@@ -5378,8 +5782,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: animationName
       value: Cross
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720031032788490348, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2720031032788490349, guid: c7bee0715a887424bb2dbca77fc2386a, type: 3}
       propertyPath: m_RootOrder
@@ -5468,6 +5884,30 @@ PrefabInstance:
       propertyPath: owner
       value: 
       objectReference: {fileID: 506531513}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: magicAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231454986192288686, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
+      propertyPath: minDefenseMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2231454986192288687, guid: 1b3e116a969c8fb4884d97a936e31a34, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5584,8 +6024,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Content Creator
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5883,8 +6323,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512835426}
     - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: magicCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
       propertyPath: animationName
       value: Hook
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836512752900524891, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}
+      propertyPath: maxDefenseMultiplier
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8c19456ad998d4192574f543f5c679, type: 3}

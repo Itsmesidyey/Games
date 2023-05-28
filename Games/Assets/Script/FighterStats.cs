@@ -31,6 +31,7 @@ public class FighterStats : MonoBehaviour, IComparable
     public float magicUppercut;
     public float defense;
     public float speed;
+
     //public float experience;
     public float startHealth;
     public float startMagic;
@@ -68,7 +69,7 @@ public class FighterStats : MonoBehaviour, IComparable
     public void ReceiveDamage(float damage)
     {
         health = health - damage;
-        animator.Play("Damage");
+        animator.Play("damage");
 
         // Set damage text
 
