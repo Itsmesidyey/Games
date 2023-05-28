@@ -85,6 +85,10 @@ public class FighterStats : MonoBehaviour, IComparable
             dead = true;
             gameObject.tag = "Dead";
             Destroy(healthFill);
+
+            isDead = true;
+            gameManager.gameOver();
+            Debug.Log("Dead");
         }
         else if (damage > 0)
         {
