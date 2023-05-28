@@ -58,7 +58,7 @@ public class MCTSScript : MonoBehaviour
 
     private Node Expand(Node node)
     {
-        string newAction = "AttackType" + (node.children.Count + 1).ToString(); // change this to reflect your actual actions
+        string newAction = "AttackType" + (node.children.Count + 1).ToString();
         Node child = new Node(node, newAction);
         node.children.Add(child);
         return child;
@@ -67,7 +67,7 @@ public class MCTSScript : MonoBehaviour
     private double Simulate(GameObject currentUnit, string action)
     {
         // Simulate a game until its end to get the reward of the node
-        // You will have to implement the SimulateGame method to simulate the game until its end and return the result
+        // This will implement the SimulateGame method to simulate the game until its end and return the result
         // The result should be a double representing the reward of the node, for example: the score of the game.
         return SimulateGame(currentUnit, action);
     }
@@ -118,11 +118,34 @@ public class MCTSScript : MonoBehaviour
             case "CounterPunch":
                 expectedDamage = unitStats.attack * unitStats.CounterPunch - enemyStats.defense;
                 break;
-            case "Block":
+            case "magicBodyshot":
+                expectedDamage = unitStats.attack * unitStats.magicBodyshot - enemyStats.defense;
+                break;
+            case "magicClinch":
+                expectedDamage = unitStats.attack * unitStats.magicClinch - enemyStats.defense;
+                break;
+            case "magicCross":
+                expectedDamage = unitStats.attack * unitStats.magicCross - enemyStats.defense;
+                break;
+            case "magicFootwork":
+                expectedDamage = unitStats.attack * unitStats.magicFootwork - enemyStats.defense;
+                break;
+            case "magicHook":
+                expectedDamage = unitStats.attack * unitStats.magicHook - enemyStats.defense;
+                break;
+            case "magicJab":
+                expectedDamage = unitStats.attack * unitStats.magicJab - enemyStats.defense;
+                break;
+            case "magicSlip":
+                expectedDamage = unitStats.attack * unitStats.magicSlip - enemyStats.defense;
+                break;
+            case "magicUppercut":
+                expectedDamage = unitStats.attack * unitStats.magicUppercut - enemyStats.defense;
+                break;
+            case "magicBlock":
                 // Assuming that blocking does no damage but reduces incoming damage
                 expectedDamage = -0.5f * enemyStats.attack;
                 break;
-            // Add more cases for other actions...
             default:
                 expectedDamage = 0f;
                 break;
